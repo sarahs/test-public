@@ -18,7 +18,8 @@ jobs:
     - name: repo-sync
       uses: repo-sync/github-sync@v2
       with:
-        source_repo: ${{ secrets.SOURCE_REPO }} # https://${access_token}@github.com/github/the-other-repo.git
+        # source_repo: ${{ secrets.SOURCE_REPO }} # https://${access_token}@github.com/github/the-other-repo.git
+        source_repo: https://${{ secrets.PAT }}@github.com/sarahs/test-public.git
         source_branch: main
         destination_branch: repo-sync
         github_token: ${{ secrets.PAT }}
