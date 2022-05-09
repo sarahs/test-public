@@ -18,5 +18,5 @@ jobs:
       with:
         source_repo: ${{ secrets.SOURCE_REPO }} # https://${access_token}@github.com/github/the-other-repo.git
         source_branch: main
-        destination_branch: repo-sync
+        destination_branch: repo-sync2
         github_token: ${{ secrets.PAT }}
